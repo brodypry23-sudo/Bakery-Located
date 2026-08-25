@@ -18,12 +18,45 @@
     </script>
     <!--<end header and navigation>-->
 
-    <div class="reader-page">
+    <section class="gallery-section">
+        <h2 class="section-title">Gallery</h2>
 
-        <h1>Gallery</h1>
-        <p>Welcome to the gallery! Here you can view images from Hokkaido.</p>
-
-    </div>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="img/1.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/2.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/3.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/4.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/5.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/6.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/7.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/8.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/9.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="img/10.jpg" alt="" class="gallery-image">
+                </li>
+            </ul>
+        </div>
+    </section>
+    
 
     <!--< footer start >-->
     <span id="footer-placeholder"></span>
@@ -33,6 +66,17 @@
         .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
     </script>
     <!--< footer end >-->
+
+    <!-- Gallery zoom -->
+    <script>
+        const galleryImages = document.querySelectorAll(".gallery-image");
+
+        galleryImages.forEach(image => {
+            image.addEventListener("click", () => {
+                image.classList.toggle("zoomed");
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
