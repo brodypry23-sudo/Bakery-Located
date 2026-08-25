@@ -144,3 +144,12 @@ footer {
     cursor: zoom-out;
     transition: none;
 }
+
+.section-title {
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
+    background-color: #e0bc8c; 
+    min-height: 70px;
+    align-content: center;
+}
