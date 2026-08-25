@@ -36,7 +36,7 @@ p {
 } 
   
 .website-navbar .nav-link:hover { 
-  color: #fcf9f6 !important; 
+  color: white
 } 
 
 .button {
@@ -94,4 +94,9 @@ p {
     background-color: #e97c3e;
 }
 
-
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #bc631a; 
+  color: white;
+}

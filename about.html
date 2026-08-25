@@ -25,6 +25,15 @@
 
     </div>
 
+    <!--< footer start >-->
+    <span id="footer-placeholder"></span>
+    <script>
+        fetch('footer.html')    
+        .then(response => response.text())    
+        .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    </script>
+    <!--< footer end >-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
