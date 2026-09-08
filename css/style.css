@@ -43,24 +43,23 @@ p {
     border: none;
     padding: 10px 20px;
     text-align: center;
-
     font-size: 16px;
     margin: 4px 2px;
 
 }
 
 .card-container{
+    justify-content: center;
     padding:20px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .card {
-    border: 1px solid #f8f8f8;
-    border-radius: 8px;
+    text-align: center;
     padding: 20px;
-    width: 100%;
-    background-color:  #fffbee;
+    width: 1000px;
+    background-color:  #e0bc8c;
     color: rgb(0, 0, 0); 
     margin: 10px;
 }
@@ -153,3 +152,36 @@ footer {
     min-height: 70px;
     align-content: center;
 }
+
+/* Contact Form Styles */
+  .url {
+    margin-left: 10px;
+    color: #999;
+    font-size: 12px;
+  }
+
+  form {
+    padding: 24px;
+  }
+
+  label {
+    display: block;
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+/*end Contact Form Styles */
