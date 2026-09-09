@@ -38,7 +38,7 @@ p {
 } 
 
 .button {
-    background-color: #BC2C1A;
+    background-color: #bc481a;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -59,15 +59,16 @@ p {
     text-align: center;
     padding: 20px;
     width: 1000px;
-    background-color:  #e0bc8c;
+    background-color:  #e0bc8c;  
     color: rgb(0, 0, 0); 
     margin: 10px;
 }
 
 .hero-section {
-    background-color: #e0bc8c;
+    background-color: #e0bc8c; 
     color: #000000;
     min-height: 400px;
+    container-type: inline-size
 }
 
 .section-content {
@@ -80,6 +81,16 @@ p {
     min-width: 300px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.hero-image-wrap {
+  flex-shrink: 0;
+}
+
+@container (max-width: 800px) {
+  .hero-image-wrap {
+    display: none;
+  }
 }
 
 .hero-button {
@@ -146,11 +157,13 @@ footer {
 
 .section-title {
     text-align: center;
+    max-width: 500px;
     color: #000000;
     border-radius: 10px;
     background-color: #e0bc8c; 
     min-height: 70px;
     align-content: center;
+    margin: 20px auto;
 }
 
 /* Contact Form Styles */
@@ -185,3 +198,58 @@ footer {
     height: 80px;
   }
 /*end Contact Form Styles */
+
+/*horizontal-scroll-section*/
+
+.carousel-container .card {
+    flex: 0 0 850px;
+    width: 850px;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.carousel-container {
+  margin: 100px auto;
+  width: 1120px;
+  border: 5px solid #b47e52; 
+  display: flex;
+  overflow-x: auto;
+  flex:auto;
+}
+
+.carousel-container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  animation: spin 100s linear infinite;
+  padding-right: 20px;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+.card img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
