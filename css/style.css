@@ -68,7 +68,6 @@ p {
   background-color: #e0bc8c;
   color: #000000;
   min-height: 400px;
-  container-type: inline-size;
 }
 
 .section-content {
@@ -87,7 +86,7 @@ p {
   flex-shrink: 0;
 }
 
-@container (max-width: 800px) {
+@media (max-width: 800px) {
   .hero-image-wrap {
     display: none;
   }
