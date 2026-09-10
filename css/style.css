@@ -68,7 +68,6 @@ p {
   background-color: #e0bc8c;
   color: #000000;
   min-height: 400px;
-  container-type: inline-size;
 }
 
 .section-content {
@@ -87,7 +86,7 @@ p {
   flex-shrink: 0;
 }
 
-@container (max-width: 800px) {
+@media (max-width: 800px) {
   .hero-image-wrap {
     display: none;
   }
@@ -166,7 +165,6 @@ footer {
     margin: 20px auto;
 }
 
-/* Contact Form Styles */
   .url {
     margin-left: 10px;
     color: #999;
@@ -197,9 +195,6 @@ footer {
     resize: vertical;
     height: 80px;
   }
-/*end Contact Form Styles */
-
-/*horizontal-scroll-section*/
 
 .carousel-container .card {
     flex: 0 0 850px;
