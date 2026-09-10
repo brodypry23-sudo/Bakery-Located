@@ -65,10 +65,10 @@ p {
 }
 
 .hero-section {
-    background-color: #e0bc8c; 
-    color: #000000;
-    min-height: 400px;
-    container-type: inline-size
+  background-color: #e0bc8c;
+  color: #000000;
+  min-height: 400px;
+  container-type: inline-size;
 }
 
 .section-content {
